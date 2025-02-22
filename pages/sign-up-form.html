@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccountCreateAccount | Starbucks</title>
+    <!-- Fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/sign-up-form.css" />
+    <!-- Link iconite Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5154586a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Niconne&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Favicon -->
+    <link rel="icon" href="../images/logo.png" type="image/icon type" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo-ul site-ului -->
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Aici este adăugat hamburger menu-ul (vizibil pe mobil) -->
+        <div class="navbar-toggle" id="mobile-menu">
+          <!-- Fiecare linie din butonul hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Meniul principal -->
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="../pages/menu.html" class="navbar-links">Meniu</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/products.html" class="navbar-links">Cafea</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/delivery.html" class="navbar-links">Livrări</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/contact.html" class="navbar-links"
+              >Contactează-ne</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/about.html" class="navbar-links">Despre noi</a>
+          </li>
+          <li class="navbar-btn">
+            <a href="../pages/sign-up-form.html" class="button sign-up"
+              >Alătură-te acum</a
+            >
+          </li>
+          <li class="navbar-btn">
+            <a href="../pages/log-in-form.html" class="button log-in"
+              >Autentifică-te</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="separator"></div>
+
+    <div class="page-container">
+      <!-- Imagine statică -->
+      <section class="hero">
+        <div class="hero-content"></div>
+      </section>
+
+      <!-- Sign Up Section -->
+      <section class="sign-up-section">
+        <h1>Înregistrează-te</h1>
+        <p>
+          Alătură-te Starbucks Rewards și câștigă Stele pentru mâncare și
+          băuturi gratuite, premii și pentru refill gratuit, indiferent de
+          metoda de plată. Obține acces la comanda mobilă cu telefonul, o
+          recompensă de ziua de naștere și multe altele.
+        </p>
+        <p>Câmpurile obligatorii sunt marcate cu un asterisc*</p>
+
+        <section>
+          <form>
+            <!-- Informații personale -->
+            <fieldset>
+              <legend>Informații personale</legend>
+              <div class="input-container">
+                <label for="first-name"
+                  ><span class="asterisk">*</span> Prenume</label
+                >
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="input-container">
+                <label for="last-name"
+                  ><span class="asterisk">*</span> Nume</label
+                >
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </fieldset>
+
+            <!-- Securitatea contului -->
+            <fieldset>
+              <legend>Securitatea contului</legend>
+              <div class="input-container">
+                <label for="email"><span class="asterisk">*</span> Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="input-container">
+                <label for="password"
+                  ><span class="asterisk">*</span> Parolă</label
+                >
+                <input type="password" id="password" name="password" required />
+              </div>
+            </fieldset>
+
+            <!-- Ziua de naștere -->
+            <fieldset>
+              <legend>Ziua ta de naștere (opțional)</legend>
+              <p class="promo-paragraph">
+                Adaugă ziua de naștere ca să-ți trimitem urările noastre și un
+                cupon gratuit cu ocazia aniversării zilei tale de naștere.
+              </p>
+              <div class="input-container">
+                <select name="month" id="month">
+                  <option value="">Lună</option>
+                  <option value="ianuarie">Ianuarie</option>
+                  <option value="februarie">Februarie</option>
+                  <option value="martie">Martie</option>
+                  <option value="aprilie">Aprilie</option>
+                  <option value="aprilie">Mai</option>
+                  <option value="aprilie">Iunie</option>
+                  <option value="aprilie">Iulie</option>
+                  <option value="aprilie">August</option>
+                  <option value="aprilie">Septembrie</option>
+                  <option value="aprilie">Octombrie</option>
+                  <option value="aprilie">Noiembrie</option>
+                  <option value="aprilie">Decembrie</option>
+                </select>
+                <select name="day" id="day">
+                  <option value="">Zi</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <!-- Opțiuni suplimentare -->
+            <fieldset>
+              <legend>
+                Fii întotdeauna gata pentru cafea și croissante proaspăt coapte.
+              </legend>
+
+              <div class="input-container">
+                <!-- Containerul principal pentru toggle -->
+                <label class="checkbox-container">
+                  <!-- Div-ul care conține toggle-ul (butonul switch) -->
+                  <div class="custom-toggle">
+                    <!-- Checkbox-ul invizibil, care controlează starea toggle-ului -->
+                    <input
+                      type="checkbox"
+                      class="custom-toggle__input"
+                      id="subscribe"
+                    />
+                    <!-- Slider-ul (fundalul butonului toggle) -->
+                    <label
+                      for="subscribe"
+                      class="custom-toggle__slider"
+                    ></label>
+                  </div>
+                  E-mailuri generale
+                </label>
+                <p class="promo-paragraph secondary">
+                  Fii la curent. E-mailul este o modalitate excelentă de a fi la
+                  curent cu cele mai recente oferte și noutăți de la Starbucks,
+                  inclusiv accesul anticipat la cele mai noi băuturi.
+                </p>
+                <p class="promo-paragraph secondary">
+                  Te poți dezabona în orice moment. Te rugăm să citești pagina
+                  noastră <a href="#">Politica de confidențialitate</a> sau
+                  <a href="#">Contactează-ne.</a>
+                </p>
+              </div>
+            </fieldset>
+
+            <!-- Limba e-mail -->
+            <div class="input-container">
+              <label for="language">Limba e-mail *</label>
+              <select name="language" id="language">
+                <option value="romana">română</option>
+                <option value="engleză">engleză</option>
+              </select>
+            </div>
+
+            <!-- Termeni de utilizare -->
+            <section class="terms-container">
+              <h2>Termeni de utilizare</h2>
+              <ul>
+                <li>
+                  <a href="#">Ajutor</a
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </li>
+                <li>
+                  <a href="#">Politica de confidențialitate</a
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </li>
+                <li>
+                  <a href="#">Termeni de Utilizare</a
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </li>
+                <li>
+                  <a href="#">Solicită ștergerea contului</a
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </li>
+              </ul>
+              <div class="terms-and-conditions-container">
+                <input type="checkbox" required />
+                <label class="checkbox-container terms-and-conditions">
+                  Apăsând pe "Înscrieți-vă la recompense" (Creați un cont),
+                  acceptați și sunteți de acord cu următorii
+                  <a href="#">Termeni și condiții Starbucks Rewards.</a>
+                </label>
+              </div>
+              <div class="data-operators-container">
+                <p>
+                  Operatorii comuni ai datelor dvs. cu caracter personal sunt:
+                </p>
+                <ul>
+                  <li>
+                    • AmRest Coffee S.R.L., cu sediul în strada Grigore
+                    Cobalcescu nr. 46, etaj 2, camera 11, sector 1, București,
+                    România.
+                  </li>
+                  <li>
+                    • Starbucks EMEA LTD, cu sediul social la Building 7
+                    Chiswick Park, 566 Chiswick High Road, Londra, Anglia, W4
+                    5YG.
+                  </li>
+                </ul>
+                <p>
+                  Datele dvs. personale vor fi prelucrate în scopul
+                  înregistrării și operării contului dvs. în programul de
+                  loialitate Starbucks Rewards, inclusiv pentru a vă trimite
+                  comunicări promoționale legate de participarea dvs. la
+                  programul de loialitate (inclusiv prin utilizarea
+                  personalizărilor profilului), precum și în scopuri statistice
+                  și analitice ale operatorilor comuni ai atelor cu caracter
+                  personal.
+                </p>
+              </div>
+
+              <button type="submit" class="submit-button">
+                Înscrieți-vă la recompense
+              </button>
+            </section>
+          </form>
+        </section>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+      <!-- Logo și secțiuni principale -->
+      <div class="footer-main">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="../images/logo.png" alt="Logo Starbucks" />
+          </a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <span class="footer-title">Despre noi</span>
+            <ul>
+              <li><a href="#">Despre noi</a></li>
+              <li><a href="#">Cafelele noastre</a></li>
+              <li><a href="#">Poveștile și noutățile Starbucks</a></li>
+              <li><a href="#">Băuturi Starbucks® gata de servit</a></li>
+              <li><a href="#">Alergeni</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Contactează-ne</span>
+            <ul>
+              <li><a href="#">Contactează-ne</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Impact social</span>
+            <ul>
+              <li><a href="#">Responsabilitate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secțiunea inferioară -->
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">Regulament</a></li>
+            <li><a href="#">Preferințe cookie</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-apps">
+          <div class="footer-apps-wrapper">
+            <div>
+              <p>
+                Începeți să comandați din timp cu aplicația Starbucks<sup
+                  >®</sup
+                >
+              </p>
+              <p>
+                Comandă și plătește – apoi vino să-ți ridici băutura la
+                magazinul selectat.
+              </p>
+            </div>
+            <div class="app-links">
+              <a href="#"
+                ><img src="../images/app-store-badge.jpg" alt="App Store"
+              /></a>
+              <a href="#"
+                ><img src="../images/google-play-badge.jpg" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drepturi rezervate -->
+      <div class="footer-rights">
+        <p>
+          © <strong class="year"></strong> Starbucks Coffee Company. Toate
+          drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="../index.js"></script>
+  </body>
+</html>

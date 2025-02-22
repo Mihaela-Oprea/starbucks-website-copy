@@ -1,0 +1,565 @@
+/* Featured Offer CSS */
+.featured-offer {
+  background: #fff;
+  padding-top: 150px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.featured-offer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.featured-offer-card {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 1200px;
+  height: 400px;
+  text-align: left;
+}
+
+.featured-offer-card-img {
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.featured-offer-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(52, 52, 52, 0.65);
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.featured-offer-card a {
+  text-decoration: none;
+}
+
+.featured-offer-card h2 {
+  font-size: 2.3rem;
+  color: rgb(255, 255, 255);
+  margin: 15px;
+}
+
+.featured-offer-card h2 sup {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.featured-offer-card-btn {
+  display: block;
+  width: calc(100% - 30px);
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border: none;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-wrap: nowrap;
+}
+
+.featured-offer-card-btn:hover {
+  opacity: 0.8;
+}
+
+/* Info Section CSS */
+.info-section {
+  padding: 0 30px 0; /* top right-left bottom */
+  background-color: #fff;
+  text-align: center;
+}
+
+.info-section li {
+  flex-basis: 25%; /* Fiecare item va ocupa 25% din lățimea secțiunii */
+}
+
+.info-section h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.info-container {
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.info-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 50px 30px 10px; /* top right-left bottom */
+}
+
+.info-item {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  inline-size: 100%;
+}
+
+.info-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.stars-image {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  font-weight: 550;
+  font-size: 16px;
+  justify-content: flex-start;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #777;
+  font-size: 16px;
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-button {
+  padding: 15px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 550;
+  background-color: rgb(0, 117, 74);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.sign-up-button:hover {
+  opacity: 0.8;
+}
+
+.log-in-button {
+  padding: 15px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 550;
+  color: rgb(0, 117, 74);
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px rgb(0, 117, 74) solid;
+  transition: all 0.4s ease-in-out;
+}
+
+.log-in-button:hover {
+  border-color: rgba(82, 120, 116, 0.5);
+  background-color: rgba(82, 120, 116, 0.1);
+}
+
+/* Services Section CSS */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0 10px; /* top right-left bottom */
+}
+
+.cards-content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  justify-content: flex-start;
+  min-block-size: 160px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.services-container {
+  padding: 10px 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* - auto-fill umple spațiul disponibil cu coloane
+     - Fiecare coloană are lățime minimă de 300px și ocupă fracțiuni egale din spațiu */
+  gap: 2.5rem;
+  justify-items: center;
+  grid-template-rows: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-card {
+  width: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px rgba(0, 0, 0, 0.06) solid;
+  color: #00754a;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.services-card img {
+  max-height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.services-card h2 {
+  color: #000000;
+  position: relative;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  text-wrap: balance;
+  min-height: 50px;
+}
+
+.cards-content-separator {
+  margin-block-start: auto;
+  padding-block: 0 1.6rem;
+  display: flex;
+  border: 0;
+  padding: 1.5rem 0 1rem;
+  margin: 0;
+}
+
+.cards-content-separator::before {
+  background-color: rgba(0, 0, 0, 0.06);
+  block-size: 1px;
+  inline-size: 100%;
+  content: "";
+  white-space: normal;
+}
+
+.services-card button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #00754a;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.arrow-right {
+  padding-left: 5px;
+  padding-right: 10px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Când hover-ul se face pe întregul buton, adica și pe text, doar iconița va fi mișcată datorită regulei .btn:hover i */
+.services-card button:hover i {
+  transform: translateX(10px);
+}
+
+/* Map CSS */
+.map-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 150px; /* top-bottom right-left */
+  height: 500px;
+}
+
+/* Stilizare harta */
+#map {
+  height: 100%;
+  width: 60%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Stilizare secțiunea de text */
+.map-info {
+  width: 35%;
+  height: 100%;
+  padding: 30px;
+  background-color: #00754a;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.map-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.map-info p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  color: #ffffffe4;
+}
+
+.map-info button {
+  position: absolute;
+  bottom: 100px;
+  background-color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 100px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.map-info button:hover {
+  opacity: 0.7;
+}
+
+/* Media queries desktop-first */
+@media screen and (max-width: 1024px) {
+  .services {
+    height: auto;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .map-container {
+    padding: 0 0 30px;
+  }
+
+  .info-list {
+    display: block;
+  }
+
+  .stars-image {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .services {
+    height: auto;
+    padding: 10px 0 10px;
+  }
+
+  .services-container {
+    padding: 10px 30px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .services-card img {
+    height: auto;
+  }
+
+  .featured-offer {
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .featured-offer-card {
+    border-radius: 0px;
+  }
+
+  .featured-offer-card-img {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+  }
+
+  .featured-offer-card-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .featured-offer-card h2 {
+    font-size: 20px;
+    margin: 0 0 50px;
+  }
+
+  .map-container {
+    padding: 10px 30px 80px;
+    display: block;
+    height: auto;
+  }
+
+  #map {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .map-info {
+    width: 100%;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .info-section h1 {
+    font-size: 2rem;
+  }
+
+  .info-section h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .info-section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .info-section li {
+    flex-basis: 30%;
+  }
+
+  .info-section img {
+    width: auto;
+  }
+
+  .stars-image {
+    margin-right: 25px;
+  }
+
+  .info-list {
+    padding: 40px 10px;
+  }
+
+  .info-section p {
+    font-size: 1rem;
+  }
+
+  .info-section button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .services {
+    height: auto;
+  }
+
+  .services-card {
+    width: 100%;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+
+  .info-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-section ul {
+    display: block;
+  }
+
+  .info-section li {
+    margin-bottom: 1rem;
+  }
+
+  .info-section p {
+    font-size: 0.9rem;
+  }
+
+  .info-section button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 20px;
+  }
+
+  .map-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured-offer-card-btn {
+    font-size: 16px;
+  }
+
+  .featured-offer-card h2 sup {
+    font-size: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .services-card button {
+    font-size: 0.9rem;
+  }
+
+  .services-card h2 {
+    font-size: 16px;
+  }
+
+  .info-section h2 {
+    font-size: 20px;
+  }
+}

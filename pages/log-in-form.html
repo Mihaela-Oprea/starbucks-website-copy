@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccountSignIn | Starbucks</title>
+    <!-- Fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/log-in-form.css" />
+    <!-- Link iconite Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5154586a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Niconne&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Favicon -->
+    <link rel="icon" href="../images/logo.png" type="image/icon type" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo-ul site-ului -->
+        <a href="../index.html" class="logo-link">
+          <img src="../images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Aici este adăugat hamburger menu-ul (vizibil pe mobil) -->
+        <div class="navbar-toggle" id="mobile-menu">
+          <!-- Fiecare linie din butonul hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Meniul principal -->
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="../pages/menu.html" class="navbar-links">Meniu</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/products.html" class="navbar-links">Cafea</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/delivery.html" class="navbar-links">Livrări</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/contact.html" class="navbar-links"
+              >Contactează-ne</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="../pages/about.html" class="navbar-links">Despre noi</a>
+          </li>
+          <li class="navbar-btn">
+            <a href="../pages/sign-up-form.html" class="button sign-up"
+              >Alătură-te acum</a
+            >
+          </li>
+          <li class="navbar-btn">
+            <a href="../pages/log-in-form.html" class="button log-in"
+              >Autentifică-te</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="separator"></div>
+
+    <div class="page-container">
+      <!-- Imagine statică -->
+      <section class="hero">
+        <div class="hero-content"></div>
+      </section>
+
+      <!-- Log In Section -->
+      <section class="log-in-section">
+        <h1>Autentifică-te</h1>
+        <p>Câmpurile obligatorii sunt marcate cu un asterisc*</p>
+
+        <section class="log-in-form">
+          <form>
+            <!-- Informații personale -->
+            <fieldset>
+              <div class="input-container">
+                <label for="first-name"
+                  ><span class="asterisk">*</span> Introdu adresa ta de
+                  e-mail</label
+                >
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="input-container">
+                <label for="last-name"
+                  ><span class="asterisk">*</span> Introdu parola</label
+                >
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </fieldset>
+
+            <p><a href="#">Ai uitat parola?</a></p>
+
+            <button type="submit" class="submit-button">Autentifică-te</button>
+
+            <p>Sunteți nou la Starbucks? <a href="#">Creează cont</a></p>
+          </form>
+        </section>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+      <!-- Logo și secțiuni principale -->
+      <div class="footer-main">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="../images/logo.png" alt="Logo Starbucks" />
+          </a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <span class="footer-title">Despre noi</span>
+            <ul>
+              <li><a href="#">Despre noi</a></li>
+              <li><a href="#">Cafelele noastre</a></li>
+              <li><a href="#">Poveștile și noutățile Starbucks</a></li>
+              <li><a href="#">Băuturi Starbucks® gata de servit</a></li>
+              <li><a href="#">Alergeni</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Contactează-ne</span>
+            <ul>
+              <li><a href="#">Contactează-ne</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Impact social</span>
+            <ul>
+              <li><a href="#">Responsabilitate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secțiunea inferioară -->
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">Regulament</a></li>
+            <li><a href="#">Preferințe cookie</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-apps">
+          <div class="footer-apps-wrapper">
+            <div>
+              <p>
+                Începeți să comandați din timp cu aplicația Starbucks<sup
+                  >®</sup
+                >
+              </p>
+              <p>
+                Comandă și plătește – apoi vino să-ți ridici băutura la
+                magazinul selectat.
+              </p>
+            </div>
+            <div class="app-links">
+              <a href="#"
+                ><img src="../images/app-store-badge.jpg" alt="App Store"
+              /></a>
+              <a href="#"
+                ><img src="../images/google-play-badge.jpg" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drepturi rezervate -->
+      <div class="footer-rights">
+        <p>
+          © <strong class="year"></strong> Starbucks Coffee Company. Toate
+          drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="../index.js"></script>
+  </body>
+</html>

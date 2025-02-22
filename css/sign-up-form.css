@@ -1,0 +1,350 @@
+/* Layout general pentru împărțirea secțiunilor */
+.page-container {
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 6.4rem;
+  width: 100%;
+}
+
+/* Hero Section CSS */
+.hero {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 50px);
+  width: 45%;
+  background: url("../images/sidebar-image.jpg") center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Sign Up Section CSS */
+.sign-up-section {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sign-up-section h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sign-up-section > p {
+  color: rgba(0, 0, 0, 0.58);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+fieldset {
+  border: unset;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+  font-size: 25px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+label .asterisk {
+  color: green;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+.promo-paragraph {
+  color: #666;
+  margin: 16px 0 16px;
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.promo-paragraph.secondary {
+  margin: 10px 0 0;
+}
+
+.promo-paragraph a {
+  color: #666;
+  text-decoration: underline;
+}
+
+.promo-paragraph a:hover {
+  text-decoration: none;
+}
+
+.promo-paragraph a:visited {
+  color: #666;
+}
+
+.promo-paragraph a:active {
+  color: #666;
+}
+
+.terms-container {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.terms-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.terms-container a {
+  color: rgb(0, 117, 74);
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.terms-container a:visited {
+  color: rgb(0, 117, 74);
+}
+
+.terms-container a:active {
+  color: rgb(0, 117, 74);
+}
+
+.terms-container a:hover {
+  text-decoration: none;
+}
+
+.terms-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.terms-container ul li {
+  margin: 0.5rem 0;
+}
+
+.terms-and-conditions a {
+  color: #000;
+  font-weight: 450;
+}
+
+.fa-arrow-up-right-from-square {
+  color: rgb(0, 117, 74);
+  font-size: 12px;
+  padding-left: 6px;
+  font-weight: 100;
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+/* Containerul toggle */
+.custom-toggle {
+  position: relative; /* Asigură poziționarea relativă pentru elementele copil */
+  display: inline-block;
+  width: 52px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+/* Ascunde checkbox-ul implicit, dar îl păstrează funcțional */
+.custom-toggle__input {
+  position: absolute; /* Suprapune checkbox-ul peste slider */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Slider-ul vizibil (partea de fundal a toggle-ului) */
+.custom-toggle__slider {
+  position: absolute; /* Poziționare în containerul părinte */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 32px; /* Rotunjire completă */
+  transition: background-color 0.3s ease;
+}
+
+/* Mânerul slider-ului (elementul alb circular) */
+.custom-toggle__slider::before {
+  content: ""; /* Creează un pseudo-element gol */
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff; /* Mânerul alb */
+  border-radius: 50%; /* Rotund */
+  transition: transform 0.3s ease;
+}
+
+/* "+" Selectează elementul imediat următor (frate adiacent) al unui element specificat */
+/* Stiluri pentru slider-ul activ când checkbox-ul este bifat */
+.custom-toggle__input:checked + .custom-toggle__slider {
+  background-color: #00704a;
+}
+
+/* Mișcarea mânerului spre dreapta când checkbox-ul este bifat */
+.custom-toggle__input:checked + .custom-toggle__slider::before {
+  transform: translateX(20px);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.terms-and-conditions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.checkbox-container.terms-and-conditions {
+  display: block;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.data-operators-container {
+  padding-left: 30px;
+  margin: 20px 0 20px;
+  font-weight: 450;
+  line-height: 1.4;
+}
+
+.submit-button {
+  margin: 20px 0 10px;
+  background-color: #00704a;
+  color: #fff;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #005736;
+}
+
+/* Media queries desktop-first */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .hero {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .hero {
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 30vh;
+    margin-bottom: 1rem;
+  }
+
+  .sign-up-section {
+    margin: 80px 10px 20px;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sign-up-section {
+    margin: 30px 10px 20px;
+  }
+
+  .hero {
+    margin-bottom: 5rem;
+  }
+
+  .terms-container h2 {
+    font-size: 20px;
+  }
+}

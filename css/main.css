@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Navbar Section CSS*/
+.logo-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar img {
+  height: 60px;
+  max-height: 100%;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.navbar {
+  background: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: top 0.7s;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#navbar-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-item {
+  height: 80px;
+}
+
+.navbar-links {
+  color: #000000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  text-wrap: nowrap;
+}
+
+.navbar-links:hover {
+  color: #00754a;
+  transition: all 0.3 ease;
+}
+
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.button.sign-up {
+  font-size: 1rem;
+  font-weight: 550;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.4s ease-in-out;
+}
+
+.button.sign-up:hover {
+  opacity: 0.8;
+}
+
+.button.log-in {
+  font-size: 1rem;
+  font-weight: 550;
+  color: #3a7a69;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px #3a7a69 solid;
+  transition: all 0.4s ease-in-out;
+}
+
+.button.log-in:hover {
+  border-color: rgba(82, 120, 116, 0.8);
+  background-color: rgba(82, 120, 116, 0.2);
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.separator {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  z-index: 1000;
+}
+
+/* Footer CSS */
+.footer-container {
+  background-color: #1e3932;
+  color: #fff;
+  padding: 60px 150px;
+  font-family: Arial, sans-serif;
+}
+
+/* Secțiunea principală */
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.footer-logo img {
+  height: 60px;
+  max-height: 100%;
+  margin-right: 70px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-section a:hover {
+  color: #e9e9e9;
+}
+
+/* Secțiunea inferioară */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 40px 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 100px;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-info a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-info a:hover {
+  color: #e9e9e9;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer-apps {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 1rem;
+  margin-right: 50px;
+}
+
+.footer-apps p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-apps p:nth-of-type(2) {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px 0;
+}
+
+.footer-apps-wrapper {
+  inline-size: 100%;
+  padding: 16px;
+  max-inline-size: 405px;
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 6px;
+}
+
+.footer-apps sup {
+  font-size: 7px;
+}
+
+.app-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-links img {
+  aspect-ratio: 178 / 58;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid hsla(0, 0%, 100%, 0.1);
+}
+
+/* Drepturi rezervate */
+.footer-rights {
+  text-align: left;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 100px;
+}
+
+.year {
+  font-weight: bold;
+}
+
+/* Media queries desktop-first */
+@media screen and (max-width: 1024px) {
+  .footer-logo img {
+    margin-bottom: 30px;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    display: contents;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-title {
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Ascunde lista (ul) în secțiunea footer până când secțiunea devine activă */
+  .footer-section ul {
+    display: none;
+    text-align: left;
+  }
+
+  /* Afișează lista (ul) în momentul în care secțiunea este activă */
+  .footer-section.active ul {
+    display: block;
+  }
+
+  .footer-title::before {
+    content: "\f078"; /* Font Awesome icon 'angle-down' */
+    font-family: "Font Awesome 5 Free"; /* Font Awesome font family */
+    font-weight: 900; /* Font Awesome solid style */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(
+      -50%
+    ); /* ajustează poziția icoanei pe verticală pentru a o centra perfect pe axa Y */
+  }
+
+  /* regulă care se aplică atunci când secțiunea din footer are clasa active (când secțiunea este extinsă) */
+  .footer-section.active .footer-title::before {
+    content: "\f077"; /* Font Awesome icon 'angle-up' */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-info {
+    padding-left: 0;
+    align-items: flex-start;
+  }
+
+  .footer-apps {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-rights {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-apps {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    height: 80px;
+  }
+
+  .separator {
+    top: 80px;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300;
+    padding: 16px 20px;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* Când butonul pentru meniu este apăsat */
+  .navbar-menu.active {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
+
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: rgb(0, 117, 74);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-item {
+    width: 100%;
+  }
+
+  .navbar-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    /* Transformă elementul într-un tabel pentru un control mai bun al layout-ului */
+    display: table;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    right: 5%;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin: 0;
+  }
+
+  .button.log-in {
+    margin-bottom: 20px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    height: 26px;
+  }
+
+  .footer-container {
+    margin-block-start: 50px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .logo-text p {
+    margin-bottom: 1rem;
+  }
+
+  .footer-container {
+    padding: 30px;
+  }
+}

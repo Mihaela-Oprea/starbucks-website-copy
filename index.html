@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage | Starbucks</title>
+    <!-- Fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- Link iconite Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5154586a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Niconne&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Favicon -->
+    <link rel="icon" href="../images/logo.png" type="image/icon type" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfStC7NmnJn8IFMLSsXrf4Blbp17rCOY8&callback=initMap&v=weekly"
+      async
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Logo-ul site-ului -->
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Aici este adăugat hamburger menu-ul (vizibil pe mobil) -->
+        <div class="navbar-toggle" id="mobile-menu">
+          <!-- Fiecare linie din butonul hamburger -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Meniul principal -->
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="pages/menu.html" class="navbar-links">Meniu</a>
+          </li>
+          <li class="navbar-item">
+            <a href="pages/products.html" class="navbar-links">Cafea</a>
+          </li>
+          <li class="navbar-item">
+            <a href="pages/delivery.html" class="navbar-links">Livrări</a>
+          </li>
+          <li class="navbar-item">
+            <a href="pages/contact.html" class="navbar-links">Contactează-ne</a>
+          </li>
+          <li class="navbar-item">
+            <a href="pages/about.html" class="navbar-links">Despre noi</a>
+          </li>
+          <li class="navbar-btn">
+            <a href="pages/sign-up-form.html" class="button sign-up"
+              >Alătură-te acum</a
+            >
+          </li>
+          <li class="navbar-btn">
+            <a href="pages/log-in-form.html" class="button log-in"
+              >Autentifică-te</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="separator"></div>
+
+    <!-- Featured Offer Section -->
+    <div class="featured-offer">
+      <div class="featured-offer-container">
+        <div class="featured-offer-card">
+          <img
+            src="images/coffee.jpg"
+            alt="Featured Offer Image"
+            class="featured-offer-card-img"
+          />
+          <div class="featured-offer-card-content">
+            <a href="#" class="logo-text">
+              <h2>Starbucks<sup>®</sup></h2>
+            </a>
+            <a href="#" class="featured-offer-card-btn"
+              >Găsește cea mai apropiată cafenea</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <h2>
+        Salutați comanda ușoară, alegerea nelimitată și - da, cafea gratuită.
+      </h2>
+      <div class="info-container">
+        <ul class="info-list">
+          <li class="info-item">
+            <img
+              src="images/rewards-1_0.png"
+              alt="Image 1"
+              class="info-image"
+            />
+            <div class="info-content">
+              <p>Colectați 1 stea pentru fiecare 2 lei cheltuiți</p>
+              <div class="info-text">
+                <p>
+                  Comandați și plătiți cum doriți pentru a câștiga băuturi
+                  gratuite.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="info-item">
+            <img
+              src="images/rewards-2_0_0.png"
+              alt="Image 2"
+              class="info-image stars-image"
+            />
+            <div class="info-content">
+              <p>La fiecare 100 de stele, bea un pahar din partea noastră</p>
+              <div class="info-text">
+                <p>
+                  Asta înseamnă că noi adăugăm un pic de strălucire zilei tale.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="info-item">
+            <img
+              src="images/rewards-3_0.png"
+              alt="Image 3"
+              class="info-image"
+            />
+            <div class="info-content">
+              <p>Asta înseamnă că noi adăugăm puțină strălucire zilei tale.</p>
+              <div class="info-text">
+                <p>
+                  Membrii Gold primesc extra gratuit din partea casei, plus o
+                  băutură gratuită de ziua ta - o meriți!
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="button-container">
+          <button class="sign-up-button">Înregistrează-te acum</button>
+          <button class="log-in-button">Conectează-te</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="services">
+      <div class="services-container">
+        <div class="services-card">
+          <img
+            src="images/HOL24_EMEA_Organic Social 4x5_ICONIC_RANGE_Master_KV_RGB.pdf_.jpg"
+            alt="coffee-image"
+          />
+          <div class="cards-content-container">
+            <h2>Încearcă băuturile clasice de sărbători!</h2>
+            <hr class="cards-content-separator" />
+            <button type="submit">
+              Apasă pentru a descoperi noutățile
+              <i
+                class="fa-solid fa-arrow-right arrow-right fa-xs"
+                title="Next Page"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="services-card">
+          <img
+            src="images/free non-dairy personalization tab image v3.png.jpg"
+            alt="coffee-image"
+          />
+          <div class="cards-content-container">
+            <h2>Alternative vegetale gratuite</h2>
+            <hr class="cards-content-separator" />
+            <button type="submit">
+              Descoperă mai multe
+              <i
+                class="fa-solid fa-arrow-right arrow-right fa-xs"
+                title="Next Page"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="services-card">
+          <img src="images/GIF-SEMI-SINGLE.jpg" alt="coffee-image" />
+          <div class="cards-content-container">
+            <h2>Inițiative sustenabile</h2>
+            <hr class="cards-content-separator" />
+            <button type="submit">
+              Descoperă mai multe
+              <i
+                class="fa-solid fa-arrow-right arrow-right fa-xs"
+                title="Next Page"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container pentru harta și text -->
+    <div class="map-container">
+      <!-- Secțiunea de text -->
+      <div class="map-info">
+        <h2>Găsește o cafenea</h2>
+        <p>
+          Partajează locația ta ca să găsești mereu cel mai apropiat magazin,
+          indiferent dacă decizi să comanzi dinainte sau să plătești în magazin.
+        </p>
+        <button>Partajează locația</button>
+      </div>
+      <!-- Secțiunea care va conține harta -->
+      <div id="map"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+      <!-- Logo și secțiuni principale -->
+      <div class="footer-main">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo Starbucks" />
+          </a>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <span class="footer-title">Despre noi</span>
+            <ul>
+              <li><a href="#">Despre noi</a></li>
+              <li><a href="#">Cafelele noastre</a></li>
+              <li><a href="#">Poveștile și noutățile Starbucks</a></li>
+              <li><a href="#">Băuturi Starbucks® gata de servit</a></li>
+              <li><a href="#">Alergeni</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Contactează-ne</span>
+            <ul>
+              <li><a href="#">Contactează-ne</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <span class="footer-title">Impact social</span>
+            <ul>
+              <li><a href="#">Responsabilitate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secțiunea inferioară -->
+      <div class="footer-bottom">
+        <div class="footer-info">
+          <ul>
+            <li><a href="#">Regulament</a></li>
+            <li><a href="#">Preferințe cookie</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-apps">
+          <div class="footer-apps-wrapper">
+            <div>
+              <p>
+                Începeți să comandați din timp cu aplicația Starbucks<sup
+                  >®</sup
+                >
+              </p>
+              <p>
+                Comandă și plătește – apoi vino să-ți ridici băutura la
+                magazinul selectat.
+              </p>
+            </div>
+            <div class="app-links">
+              <a href="#"
+                ><img src="images/app-store-badge.jpg" alt="App Store"
+              /></a>
+              <a href="#"
+                ><img src="images/google-play-badge.jpg" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drepturi rezervate -->
+      <div class="footer-rights">
+        <p>
+          © <strong class="year"></strong> Starbucks Coffee Company. Toate
+          drepturile rezervate.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
