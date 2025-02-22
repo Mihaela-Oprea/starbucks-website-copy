@@ -5,7 +5,7 @@ This is a **fully responsive**, multi-page website project created for Starbucks
 ---
 
 ## 🌍 Demo
-🌐  [Visit the website on Netlify](https://personal-project-63n3m89.netlify.app/)
+🌐  [Visit the website on Netlify](https://star-bucks-website-copy-2132.netlify.app/)
 
 ---
 
