@@ -1,6 +1,6 @@
 # ˗ˏˋ☕ˎˊ˗ Starbucks Website Project
 
-This is a **fully responsive**, multi-page website project created for Starbucks. It is designed to replicate a modern **Starbucks website**, featuring various sections such as a homepage, menu, products, delivery information, contact, about, sign-up, and log-in form.
+This is my first **HTML & CSS project**. It is designed to replicate a modern **Starbucks website**, featuring various sections such as a homepage, menu, products, delivery information, contact, about, sign-up, and log-in form.
 
 ---
 
@@ -26,7 +26,6 @@ This is a **fully responsive**, multi-page website project created for Starbucks
 
 - **HTML5** - Structure and semantics of the website
 - **CSS3** - Styling and responsive design
-- **JavaScript** - Interactivity and dynamic functionalities
 - **Google Fonts & Material Symbols** - For custom typography and icons
 - **Font Awesome** - For additional icon support
 - **Google Maps API** - For embedding interactive maps
